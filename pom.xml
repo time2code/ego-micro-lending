@@ -5,10 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>my.own</groupId>
-    <artifactId>jp-init</artifactId>
+    <artifactId>ego-micro-lending</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+		<springframework>3.2.5.RELEASE</springframework><!-- spring-framework version -->
         <logback>1.0.13</logback><!-- logback version -->
         <junit>4.11</junit><!-- junit version -->
     </properties>
@@ -16,10 +17,15 @@
 
     <dependencies>
         <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-core</artifactId>
-            <version>${logback}</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${springframework}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${springframework}</version>
+        </dependency>       
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
